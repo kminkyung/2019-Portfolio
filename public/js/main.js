@@ -94,23 +94,23 @@ $(window).scroll(function(){
 	else if(scTop < 2700) {
 		$(".portfolio-main").css({"background-color":"#ffb597"});
 		$(".portfolio-main").eq(2).find(".caption").stop().animate({"opacity":1, "bottom":"100px"}, 300);
-				$(".portfolio-main").eq(0).find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 300);		
+		$(".portfolio-main").eq(0).find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 300);		
 		$(".portfolio-main").eq(1).find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 300);		
 	}
 	else if(scTop < 3600) {
-		 $(".portfolio-main").css({"background-color":"#cbffcb"});
-		 $(".portfolio-main").eq(3).find(".caption").stop().animate({"opacity":1, "bottom":"100px"}, 500);
-		 $(".portfolio-main").eq(2).find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 500);	
+		$(".portfolio-main").css({"background-color":"#cbffcb"});
+		$(".portfolio-main").eq(3).find(".caption").stop().animate({"opacity":1, "bottom":"100px"}, 500);
+		$(".portfolio-main").eq(2).find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 500);	
 	}
 	else if(scTop < 4500) {
-		 $(".portfolio-main").css({"background-color":"#ffb6c1"});
-		 $(".portfolio-main").eq(4).find(".caption").stop().animate({"opacity":1, "bottom":"100px"}, 300);
-		 $(".portfolio-main").eq(3).find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 300);	
-		//  console.log(scTop);
+		$(".portfolio-main").css({"background-color":"#ffb6c1"});
+		$(".portfolio-main").eq(4).find(".caption").stop().animate({"opacity":1, "bottom":"100px"}, 300);
+		$(".portfolio-main").eq(3).find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 300);	
+	//  console.log(scTop);
 		}
 	else if(scTop < 5400) {
-		 $(".portfolio-main").css({"background-color":"#dbdbf6"});
-		 $(".portfolio-main").find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 300);	
+		$(".portfolio-main").css({"background-color":"#dbdbf6"});
+		$(".portfolio-main").find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 300);	
 	}
 
 /* 	switch (scTop) {
