@@ -9,7 +9,7 @@ $(".portfolio").click(function(){
 	$(".navi").eq(0).stop().animate({"height":"78px"}, 500);
 	$(this).stop().animate({"font-size":"2.25vw"}, 500);
 	$(".navi").eq(1).stop().animate({"top":"1000px"}, 500);
-	$(".navi").eq(2).stop().animate({"top":"1300px"}, 500);
+	$(".navi").eq(2).stop().animate({"top":"1200px"}, 500);
 	$(this).parent().children(".left").animate({"left":0}, 500);
 	$(this).parent().children(".right").animate({"right":0}, 500);
 	$(".portfolio-page").css("display","block");
@@ -55,6 +55,7 @@ $(".navi-ab").children(".right").click(function(){
 
 // Work
 $(".work").click(function(){
+	$(window).scrollTop(0);
 	$(".navi").eq(0).stop().animate({"top":"-630px"}, 500);
 	$(".navi").eq(1).stop().animate({"top":"-630px"}, 500);
 	$(".navi").eq(2).stop().animate({"top": "-632px", "height":"78px"}, 500);
@@ -75,7 +76,13 @@ $(".navi-wk").children(".right").click(function(){
 	$(this).parent().children(".left").animate({"left":"-100%"}, 500);
 	$(this).parent().children(".right").animate({"right":"-100%"}, 500);
 });
-
+// Work - hover 
+$(".rows").mouseenter(function(){
+	$(this).children(".work-desc").css("display","block");
+});
+$(".rows").mouseleave(function(){
+	$(this).children(".work-desc").css("display","none");
+});
 
 /* SCROLL EVENT */
 $(window).scroll(function(){
@@ -97,18 +104,18 @@ $(window).scroll(function(){
 		$(".portfolio-main").eq(0).find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 300);		
 		$(".portfolio-main").eq(1).find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 300);		
 	}
-	else if(scTop < 4500) {
+	else if(scTop < 4000) {
 		$(".portfolio-main").css({"background-color":"#cbffcb"});
 		$(".portfolio-main").eq(3).find(".caption").stop().animate({"opacity":1, "bottom":"100px"}, 500);
 		$(".portfolio-main").eq(2).find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 500);	
 	}
-	else if(scTop < 6000) {
+	else if(scTop < 5000) {
 		$(".portfolio-main").css({"background-color":"#ffb6c1"});
 		$(".portfolio-main").eq(4).find(".caption").stop().animate({"opacity":1, "bottom":"100px"}, 300);
 		$(".portfolio-main").eq(3).find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 300);	
 	//  console.log(scTop);
 		}
-	else if(scTop < 7500) {
+	else if(scTop < 6000) {
 		$(".portfolio-main").css({"background-color":"#dbdbf6"});
 		$(".portfolio-main").find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 300);	
 	}

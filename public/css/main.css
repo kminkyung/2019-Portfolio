@@ -28,7 +28,9 @@ html, body {
 
 /* NAVIGATION */
 nav {
+	/* display: none; */
 	width: 100%;
+	height: 80px;
 	position: fixed;
 	z-index: 1000;
 }
@@ -39,7 +41,7 @@ nav {
 	border-bottom: 2px solid #000;
 	width: 100%;
 	/* height: 78px; */
-	height: 355px;
+	height: 315px;
 	/* font-size: 2.25rem; */
 	font-size: 2.25vw;
 	/* transition: all 1s; */
@@ -72,7 +74,7 @@ nav {
 }
 .navi:nth-child(3) {
 	border-top: 2px solid #000;
-	top: 1300px;
+	top: 1200px;
 }
 
 .menu-item {
@@ -190,17 +192,18 @@ nav {
 	z-index: 10;
 }
 .caption > h5 {
-	font-size: 1.3rem;
+	font-size: 1.3vw;
 }
 .caption > h6 {
-	font-size: 1rem;
+	font-size: 1vw;
 }
 .caption p {
-	font-size: 1rem;
+	font-size: 0.95vw;
 }
 
-.img-archive, .img-furniture {
-}
+/* .img-archive {
+
+} */
 
 
 /* WORK */
@@ -208,7 +211,7 @@ nav {
 	padding-top: 6rem;
 	display: none;
 }
-.work-cate {
+.work-title {
 	margin: 2vw;
 	font-size: 3.25vw;
 	font-weight: 400;
@@ -218,23 +221,46 @@ nav {
 	/* border: 1px solid blue; */
 }
 
-.work-java {
+.work-content {
 	display: flex;
 	margin-bottom: 6vw;
 	justify-content: space-around;
+	/* border: 1px solid red; */
 }
 
-.row-java {
+.rows {
 	flex: 28% 0 0;
-	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
-	border: 1px solid #ddd;
-	overflow: hidden;
+	position: relative;
 	cursor: pointer;
+	/* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3); */
+	/* overflow: hidden; */
+	/* border: 1px solid #ddd; */
 }
-
-.row-java > img:hover {
-	transition: all 1s;
-	transform: translateY(-50px);
+.rows img {
+	box-shadow: -1px 13px 45px -25px rgba(0,0,0,0.75);
+} 
+.rows .work-desc {
+	width: 100%;
+	text-align: center;
+	line-height: 1.6;
+	letter-spacing: -0.2px;
+	font-size: 1.1vw;
+	font-weight: 500;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -60%);
+	display: none;
+	/* border: 1px solid black; */
+}
+.project-name {
+	margin-top: 1rem;
+	font-size: 1.4vw;
+}
+.rows:hover img {
+	opacity: 0.2;
+	/* transition: all 0.2s; */
+	/* transform: translateY(-50px); */
 }
 
 
@@ -254,17 +280,40 @@ nav {
 	text-align: center;
 }
 
-
-@media screen and (max-width: 996px) {
-	.work-java {
-		flex-wrap: wrap;
+@media screen and (max-width: 1300px) {
+	.content-wrap {
+		width: 100%;
+		height: 100%;
 	}
-	.row-java {
-		flex: 99% 0 0;
-		margin-bottom: 10vw;
+	.caption > h5 {
+		font-size: 2vw;
+	}
+	.caption > h6 {
+		font-size: 1.75vw;
+	}
+	.caption p {
+		font-size: 1.25vw;
 	}
 }
 
+@media screen and (max-width: 996px) {
+	.work-content {
+		flex-wrap: wrap;
+	}
+	.rows {
+		flex: 99% 0 0;
+		margin-bottom: 10vw;
+	}
+	.caption > h5 {
+		font-size: 2.75vw;
+	}
+	.caption > h6 {
+		font-size: 2vw;
+	}
+	.caption p {
+		font-size: 1.75vw;
+	}
+}
 
 @media screen and (max-width: 768px) {
 
@@ -272,5 +321,13 @@ nav {
 }
 
 @media screen and (max-width: 576px) {
-
+	.caption > h5 {
+		font-size: 3.5vw;
+	}
+	.caption > h6 {
+		font-size: 2.75vw;
+	}
+	.caption p {
+		font-size: 2.5vw;
+	}
 }
