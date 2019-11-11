@@ -9,10 +9,13 @@
 	<link rel="stylesheet" href="../css/fa.min.css">
 	<link rel="stylesheet" href="../css/animate.css">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../vegas/vegas.css">
 	<link rel="stylesheet" href="../css/base-bootstrap.css">
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery.youtube-background.js"></script>
+	<script src="../vegas/vegas.min.js"></script>
 	<script src="../js/jquery.cookie.js"></script>
 	<script src="../js/popper.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
@@ -65,16 +68,23 @@
 		<article class="portfolio-main">
 			<div class="content-wrap">
 				<div class="content-web">
-					<video width="1200" autoplay muted loop>
+					<img src="../img/score-main.png" alt="site" class="img">
+					<!-- <video width="1200" autoplay muted loop>
 						<source src="../video/band.mp4">
-					</video>
+					</video> -->
 					<h2 class="content-tit">
 					</h2>
 				</div>
 			</div>
-			<div class="caption">Habitant dictum ad arcu. Donec. absLitora primis tristique tempor<br> eros massa est at netus
-				leo proin orci dictumst ornare nunc.<br> Nam faucibus interdum. Placerat nonummy rhoncus litora in.<br> Fusce
-				ornare hac Mollis lobortis aliquam penatibus consequat.</div>
+			<div class="caption">
+					<h5>Score Management App</h5>
+					<h6 class="mt-1">Score Management SPA Application using AJAX</h6>
+					<p class="mt-3">
+						Web Front-End Dev.<br>
+						HTML5 / CSS3 / jQuery / JavaScript ES5 / PHP / MySQL<br>
+						Based on Google Firebase Framework (Hosting)
+					</p>
+				</div>
 		</article>
 		<!-- Archives -->
 		<article class="portfolio-main">
@@ -135,6 +145,7 @@
 		<article class="portfolio-main">
 			<div class="content-wrap">
 				<a class="content-web" href="https://ui-furniture.firebaseapp.com" target="_blank">
+					<!-- <div id="youtube-video" class="video" data-youtube="https://youtu.be/y4OZ_dfkdEY"></div> -->
 					<video width="100%" autoplay muted loop>
 						<source src="../video/ui-furniture.mp4">
 					</video>
@@ -181,55 +192,73 @@
 			<h1 class="work-title">Web Design & Publishing</h1>
 			<ul class="work-content work-web">
 				<li class="rows row-web">
-					<a href="https://ui-furniture.firebaseapp.com" target="_blank">
-						<img src="../img/furniture-main-crop.png" alt="website" class="img">
-					</a>
-					<div class="work-desc">Responsive Shopping Mall Website<br>
-						HTML5 / CSS3<br>jQuery / JavaScript ES5<br>
-						Hosted by Google Firebase Framework</div>
+					<div class="position-relative">
+						<a href="https://ui-furniture.firebaseapp.com" target="_blank">
+							<img src="../img/furniture-main-crop.png" alt="website" class="img">
+						</a>
+						<div class="work-desc">Responsive Shopping Mall Website<br>
+							HTML5 / CSS3<br>jQuery / JavaScript ES5<br>
+							Hosted by Google Firebase Framework</div>
+					</div>
 					<p class="project-name">Furniture Shop</p>
 				</li>
 				<li class="rows row-web">
-					<img src="../img/bruno-ferdinand-grid-4.png" alt="website" class="img">
-					<div class="work-desc">Work in Progress</div>
+					<div class="position-relative">
+						<a href="#">
+							<img src="../img/bruno-ferdinand-grid-4.png" alt="website" class="img">
+						</a>
+						<div class="work-desc">Work in Progress</div>
+					</div>
 					<p class="project-name">Starbucks Renewal</p>
 				</li>
 				<li class="rows row-web">
-					<img src="../img/nahee-1.JPG" alt="website" class="img">
-					<div class="work-desc">Work in Progress</div>
-					<p class="project-name">Nahee Kim</p>
+					<div class="position-relative">
+						<a href="#">
+							<img src="../img/nahee-browser.jpg" alt="website" class="img">
+						</a>
+							<div class="work-desc">Work in Progress</div>
+						<p class="project-name">Nahee Kim</p>
+					</div>
 				</li>
 			</ul>
 			<!-- Front-End -->
 			<h1 class="work-title">Front-End</h1>
 			<ul class="work-content work-front">
 				<li class="rows row-front">
-					<a href="https://ui-weather.firebaseapp.com/" target="_blank">
-						<img src="../img/weather-thumbnail.JPG" alt="website" class="img">
-					</a>
-					<div class="work-desc">
-						Weather Forecast Application for Mobile<br>
-						HTML5 / CSS3 / jQuery / JavaScript ES5, ES6<br>
-						AJAX / JSON<br>
-						Based on Google Firebase Framework (Hosting)
+					<div class="position-relative">
+						<a href="https://ui-weather.firebaseapp.com/" target="_blank">
+							<img src="../img/weather-mobile.png" alt="website" class="w-100">
+						</a>
+						<div class="work-desc">
+							Weather Forecast Application for Mobile<br>
+							HTML5 / CSS3 / jQuery / JavaScript ES5, ES6<br>
+							AJAX / JSON<br>
+							Based on Google Firebase Framework (Hosting)
+						</div>
 					</div>
 					<p class="project-name">Today's Weather</p>
 				</li>
 				<li class="rows row-front">
-					<a href="https://ui-note.firebaseapp.com" target="_blank">
-						<img src="../img/ui-note-tablet-2.png" alt="website" class="w-100">
-					</a>
-					<div class="work-desc">
-						Multi-user Base Online Note Application via Socket.io<br>
-						HTML5 / CSS3 / jQuery / JavaScript ES5, ES6<br>
-						Based on Google Firebase Framework<br>
-						(Auth, Realtime Database, Storage, Hosting)
+					<div class="position-relative">
+						<a href="https://ui-note.firebaseapp.com" target="_blank">
+							<img src="../img/ui-note-tablet-2.png" alt="website" class="w-100">
+						</a>
+						<div class="work-desc">
+							Multi-user Base Online Note Application via Socket.io<br>
+							HTML5 / CSS3 / jQuery / JavaScript ES5, ES6<br>
+							Based on Google Firebase Framework<br>
+							(Auth, Realtime Database, Storage, Hosting)
+						</div>
 					</div>
 					<p class="project-name">Notes</p>
 				</li>
 				<li class="rows row-front">
-					<img src="../img/score-main-temp.JPG" alt="website" class="img">
-					<div class="work-desc">Work in Progress</div>
+					<div class="position-relative">
+						<a href="#">
+							<img src="../img/score-main.png" alt="website" class="img">
+						</a>
+						<div class="work-desc">Work in Progress</div>
+					</div>
 					<p class="project-name">Score</p>
 				</li>
 			</ul>
@@ -237,25 +266,32 @@
 			<h1 class="work-title">Back-End</h1>
 			<ul class="work-content work-back">
 				<li class="rows row-back">
-					<img src="../img/archives-main-crop.png" alt="website" class="img">
-					<div class="work-desc">
-						Internet Bulletin Board<br>
-						HTML5 / CSS3 / jQuery / JavaScript ES6<br>
-						SQL / Express4 / Node.js10 / MySQL5.7<br>
-						Node.js Backend Project<br>Based on Express Framework & AWS</div>
+					<div class="position-relative">
+						<a href="#">
+							<img src="../img/archives-main-crop.png" alt="website" class="img">
+						</a>
+						<div class="work-desc">
+							Internet Bulletin Board<br>
+							HTML5 / CSS3 / jQuery / JavaScript ES6<br>
+							SQL / Express4 / Node.js10 / MySQL5.7<br>
+							Node.js Backend Project<br>Based on Express Framework & AWS</div>
+					</div>
 					<p class="project-name">Archives</p>
 				</li>
 				<li class="rows row-back">
-					<img src="../img/bruno-ferdinand-grid-5.png" alt="website" class="img">
-					<div class="work-desc">Work in Progress</div>
+					<div class="position-relative">
+						<a href="#">
+							<img src="../img/ella-browser.jpg" alt="website" class="img">
+						</a>
+						<div class="work-desc">Work in Progress</div>
+					</div>
 					<p class="project-name">Ella</p>
 				</li>
 				<li class="rows row-back">
-					<img src="../img/bruno-ferdinand-grid-6.png" alt="website" class="img">
 					<p class="project-name"></p>
 				</li>
 			</ul>
-		</div>
+			</divc>
 	</section>
 	<footer>
 		<div class="end">End.</div>

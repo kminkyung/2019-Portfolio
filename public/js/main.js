@@ -5,6 +5,7 @@
 // Portfolio
 $(".portfolio").click(function(){
 	$(window).scrollTop(0);
+	$("body").css({"overflow":"initial"});
 	$(".navi").eq(0).stop().animate({"height":"78px"}, 500);
 	$(this).stop().animate({"font-size":"2.25vw"}, 500);
 	$(".navi").eq(1).stop().animate({"top":"100%"}, 500);
@@ -20,6 +21,7 @@ $(".portfolio").click(function(){
 });
 // Portfolio - Menu
 $(".navi-pf").children(".right").click(function(){
+	$("body").css({"overflow":"hidden"});
 	$("nav").css("height","100%");
 	$(".portfolio").stop().animate({"font-size":"17vw"}, 500);
 	$(".navi").eq(0).stop().animate({"height":"34%"}, 500);
@@ -27,13 +29,13 @@ $(".navi-pf").children(".right").click(function(){
 	$(".navi").eq(2).stop().animate({"top":"-4px"}, 500);
 	$(this).parent().children(".left").animate({"left":"-100%"}, 500);
 	$(this).parent().children(".right").animate({"right":"-100%"}, 500);
-
 });
 
 // About
 $(".about").click(function(){
 	$(window).scrollTop(0);
-	$(".navi").eq(0).stop().animate({"top":"-150%"}, 500)
+	$("body").css({"overflow":"initial"});
+	$(".navi").eq(0).stop().animate({"top":"-170%"}, 500)
 	$(".navi").eq(1).stop().animate({"top":"-34%", "height":"78px"}, 500);
 	$(".navi").eq(2).stop().animate({"top":"1000px"}, 500);
 	$(".about").stop().animate({"font-size":"2.25vw"}, 500);
@@ -52,6 +54,7 @@ $(".about").click(function(){
 });
 // About - Menu
 $(".navi-ab").children(".right").click(function(){
+	$("body").css({"overflow":"hidden"});
 	$("nav").css("height","100%");
 	$(".navi").eq(0).stop().animate({"top": 0}, 500);
 	$(".navi").eq(1).stop().animate({"top": "-2px", "height":"34%"}, 500);
@@ -64,8 +67,9 @@ $(".navi-ab").children(".right").click(function(){
 // Work
 $(".work").click(function(){
 	$(window).scrollTop(0);
-	$(".navi").eq(0).stop().animate({"top":"-140%"}, 500)
-	$(".navi").eq(1).stop().animate({"top":"-140%"}, 500);
+	$("body").css({"overflow":"initial"});
+	$(".navi").eq(0).stop().animate({"top":"-170%"}, 500)
+	$(".navi").eq(1).stop().animate({"top":"-170%"}, 500);
 	$(".navi").eq(2).stop().animate({"top": "-68%", "height":"78px"}, 500);
 	$(".work").stop().animate({"font-size":"2vw"}, 500);
 	$(this).parent().children(".left").animate({"left":0}, 500);
@@ -79,6 +83,7 @@ $(".work").click(function(){
 });
 // Work - Menu
 $(".navi-wk").children(".right").click(function(){
+	$("body").css({"overflow":"hidden"});
 	$("nav").css("height", "100%");
 	$(".navi").eq(0).stop().animate({"top": 0}, 500);
 	$(".navi").eq(1).stop().animate({"top": "-2px"}, 500);
@@ -89,10 +94,10 @@ $(".navi-wk").children(".right").click(function(){
 });
 // Work - hover 
 $(".rows").mouseenter(function(){
-	$(this).children(".work-desc").css("display","block");
+	$(this).find(".work-desc").css("display","block");
 });
 $(".rows").mouseleave(function(){
-	$(this).children(".work-desc").css("display","none");
+	$(this).find(".work-desc").css("display","none");
 });
 
 /* SCROLL EVENT */
@@ -133,3 +138,9 @@ $(window).scroll(function(){
 		$(".portfolio-main").find(".caption").stop().animate({"opacity":0, "bottom":"-100px"}, 300);	
 	}
 });
+
+
+/* $(function(){
+  $('[data-youtube]').youtube_background();
+	});
+ */

@@ -108,8 +108,8 @@ nav {
 .about-page {
 	background-image: url(../img/about-drawing.gif);
 	background-repeat: no-repeat;
-	background-position: 95% 90%;
-	background-size: 60%;
+	background-position: 95% 110%;
+	background-size: 55%;
 	background-color: #fff;
 	width: 100%;
 	height: 1000px;
@@ -199,7 +199,7 @@ nav {
 .weather-video-wrap {
 	position: relative;
 	left: 12%;
-	top: 3vw;
+	top: 2.5vw;
 	width: 76%;
 	/* border: 1px solid blue; */
 }
@@ -238,7 +238,6 @@ nav {
 
 .rows {
 	flex: 28% 0 0;
-	position: relative;
 	cursor: pointer;
 	/* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3); */
 	/* overflow: hidden; */
@@ -247,7 +246,7 @@ nav {
 .rows .img {
 	box-shadow: -1px 13px 45px -25px rgba(0,0,0,0.75);
 } 
-.rows .work-desc {
+.work-desc {
 	width: 100%;
 	text-align: center;
 	line-height: 1.6;
@@ -256,8 +255,9 @@ nav {
 	font-weight: 500;
 	position: absolute;
 	top: 50%;
-	left:50%;
-	transform: translate(-50%, -60%);
+	left: 50%;
+	z-index: 9999;
+	transform: translate(-50%, -50%);
 	display: none;
 	/* border: 1px solid black; */
 }
@@ -338,6 +338,13 @@ a.work-desc:hover{
 	}
 	.caption p {
 		font-size: 1.75vw;
+	}
+	.rows .work-desc {
+		font-size: 3vw;
+	}
+	.project-name {
+		margin-top: 1rem;
+		font-size: 2.25vw;
 	}
 
 }
