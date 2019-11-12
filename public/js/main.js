@@ -37,8 +37,9 @@ $(".navi-pf").children(".right").click(function(){
 // About
 $(".about").click(function(){
 	$(window).scrollTop(0);
+	// var aboutHeight = $(".about").css("height").replace("px", "");
 	$("body").css({"overflow":"initial"});
-	$(".navi").eq(0).stop().animate({"top":"-170%"}, 500)
+	$(".navi").eq(0).stop().animate({"top":"-250%"}, 500)
 	$(".navi").eq(1).stop().animate({"top":"-34%", "height":"78px"}, 500);
 	$(".navi").eq(2).stop().animate({"top":"1000px"}, 500);
 	$(".about").stop().animate({"font-size":"2.25vw"}, 500);
@@ -53,7 +54,6 @@ $(".about").click(function(){
 	$(".portfolio-page").css("display","none");
 	$(".work-page").css("display","none");
 	$("footer").css("display","none");
-
 });
 // About - Menu
 $(".navi-ab").children(".right").click(function(){
@@ -71,7 +71,7 @@ $(".navi-ab").children(".right").click(function(){
 $(".work").click(function(){
 	$(window).scrollTop(0);
 	$("body").css({"overflow":"initial"});
-	$(".navi").eq(0).stop().animate({"top":"-170%"}, 500)
+	$(".navi").eq(0).stop().animate({"top":"-250%"}, 500)
 	$(".navi").eq(1).stop().animate({"top":"-170%"}, 500);
 	$(".navi").eq(2).stop().animate({"top": "-68%", "height":"78px"}, 500);
 	$(".work").stop().animate({"font-size":"2vw"}, 500);
