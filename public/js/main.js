@@ -140,7 +140,21 @@ $(window).scroll(function(){
 });
 
 
-/* $(function(){
-  $('[data-youtube]').youtube_background();
-	});
- */
+$('[data-youtube]').youtube_background();
+
+// ytp = new YT.Player($elem[0], {
+//   videoId: ytid,
+//   playerVars: {
+//     'controls': 0,
+//     'autoplay': 1,
+//     'mute': 1,
+//     'loop': 1,
+//     'rel': 0,
+//     'showinfo': 0,
+//     'modestbranding': 1
+//   },
+//   events: {
+//     'onReady': onVideoPlayerReady,
+//     'onStateChange': onVideoStateChange
+//   }
+// });
