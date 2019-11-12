@@ -33,11 +33,13 @@ nav {
 	height: 78px;
 	position: fixed;
 	z-index: 9999;
+	overflow: hidden;
 }
 
 .navi {
 	position: relative;
 	text-align: center;
+	border-top: 2px solid #000;
 	border-bottom: 2px solid #000;
 	width: 100%;
 	height: 34%;
@@ -45,6 +47,7 @@ nav {
 	/* height: 78px; */
 	font-size: 2vw;
 	background-color: #fff;
+
 }
 
 /* Navi Hover */
@@ -69,11 +72,9 @@ nav {
 	right: 0;
 }
 .navi:nth-child(2) {
-	border-top: 2px solid #000;
 	top: 1000px;
 }
 .navi:nth-child(3) {
-	border-top: 2px solid #000;
 	top: 1200px;
 }
 
@@ -172,21 +173,13 @@ nav {
 	height: 100%;
 	/* border: 1px solid #bbb; */
 }
-/* #ytbg {
-	width: 100%;
-	height: 100%;
-}
-.player > div {
-	width: 100%;
-	height: 100%;
-} */
 
 .content-mobile {
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	position: relative;
-		z-index: 9;
+	z-index: 9;
 	/* border: 1px solid red; */
 }
 .content-mobile > li {
@@ -212,7 +205,7 @@ nav {
 .weather-video-wrap {
 	position: relative;
 	left: 12%;
-	top: 2.7vw;
+	top: 2.5vw;
 	width: 76%;
 	/* border: 1px solid blue; */
 }
@@ -304,15 +297,21 @@ a.work-desc:hover{
 }
 
 
+@media screen and (max-width: 1679px) {
+	.weather-video-wrap {
+		top: 2.9vw;
+	}
+}
+
 @media screen and (max-width: 1500px) {
 	.weather-video-wrap {
 		top: 3.1vw;
-}
+	}
 }
 @media screen and (max-width: 1400px) {
 	.weather-video-wrap {
 		top: 3.5vw;
-}
+	}
 }
 
 @media screen and (max-width: 1300px) {
@@ -331,9 +330,8 @@ a.work-desc:hover{
 	}
 	.weather-video-wrap {
 		top: 3.8vw;
+	}
 }
-}
-
 
 @media screen and (max-width: 996px) {
 	.work-content {
@@ -359,13 +357,20 @@ a.work-desc:hover{
 		margin-top: 1rem;
 		font-size: 2.25vw;
 	}
-
+	.navi, .navi-item.portfolio, .navi-item.about, .navi-item.work {
+		font-size: 2.5vw;
+	}
+	.menu-sub {
+		padding: 0 4vw;
+	}
 }
-
 
 @media screen and (max-width: 768px) {
 	.portfolio-main {
 		padding: 4rem 0;
+	}
+	.navi {
+		font-size: 3vw;
 	}
 }
 

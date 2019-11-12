@@ -1,5 +1,8 @@
 // Global
-
+$(document).ready(function(){
+	$(".navi").eq(1).css({"top":"-200%"}, 500);
+	$(".navi").eq(2).css({"top":"-200%"}, 500);
+})
 
 /* NAVIGATION */
 // Portfolio
@@ -140,7 +143,7 @@ $(window).scroll(function(){
 });
 
 
-$('[data-youtube]').youtube_background();
+// $('[data-youtube]').youtube_background();
 
 // ytp = new YT.Player($elem[0], {
 //   videoId: ytid,
