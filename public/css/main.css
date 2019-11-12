@@ -21,10 +21,10 @@ html, body {
 	width: 1200px;
 	height: 700px;
 }
-.content-wrap-lg {
+/* .content-wrap-lg {
 	margin: 0 auto;
 	width: 1500px;
-}
+} */
 
 
 /* NAVIGATION */
@@ -156,18 +156,30 @@ nav {
 	padding: 10rem 0;
 	font-size: 1.2rem;
 	transition: all 1s;
+	width: 100%;
+	height: 100%;
 	/* border: 1px solid red; */
 }
 
 .content-web {
 	overflow: hidden;
-	position: relative;
+	/* position: relative; */
 	text-align: center;
 	background-color: #fff;
 	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
+	width: 100%;
+	height: 100%;
 	/* border: 1px solid #bbb; */
 }
+/* #ytbg {
+	width: 100%;
+	height: 100%;
+}
+.player > div {
+	width: 100%;
+	height: 100%;
+} */
 
 .content-mobile {
 	width: 100%;
